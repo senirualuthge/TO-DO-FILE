@@ -1,4 +1,4 @@
-"use strict";
+
 
 const form = document.querySelector("#todo-form");
 const input = document.querySelector("#todo-input");
@@ -24,7 +24,6 @@ function saveTasks() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
   } catch {
-    /* storage unavailable: tasks stay in memory for this session */
   }
 }
 
